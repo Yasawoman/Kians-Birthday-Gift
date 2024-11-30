@@ -43,7 +43,7 @@ def magic_8_ball(text):
 
 # Streamlit input for user text
 st.subheader("🎱 Ask the Magic 8 Ball a question about Yasaman! 🎱 ")
-text = st.text_input("Enter your question:", value="Does Yasaman care about me? 🤍🪱")
+text = st.text_input("Enter your question:", value="Does Yasaman care about me?")
 
 # Run Magic 8 Ball function if text is provided
 if text and text != "Does Yasaman care about me?":
@@ -51,5 +51,3 @@ if text and text != "Does Yasaman care about me?":
 
 # Display the predefined image
 st.subheader("Surprise...she cares a lot 🤍🪱")
-image = Image.open("unnamed-4.jpg")  # Ensure this file is in the same directory as app.py
-st.image(image, caption="Manifesting love in all its shapes & forms", use_column_width=True)
